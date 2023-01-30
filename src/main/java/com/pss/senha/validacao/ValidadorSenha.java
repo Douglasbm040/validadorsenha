@@ -38,11 +38,7 @@ public final class ValidadorSenha {
 
     public List<String> validar(String senha) {
 
-        if (senha == null) {
-            return new ArrayList<>(Arrays.asList("Informe uma senha;"));
-        }
-
-        if (senha.isEmpty()) {
+        if (senha == null || senha.isEmpty()) {
             return new ArrayList<>(Arrays.asList("Informe uma senha;"));
         }
 
